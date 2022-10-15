@@ -1,18 +1,7 @@
 <template>
-<div>
-  <ul>
-    <li>
-      <NuxtLink to="/about">
-        Page About
-      </NuxtLink>
-    </li>
-    <li>
-      <NuxtLink to="/works">
-        Page works
-      </NuxtLink>
-    </li>
-  </ul>
-</div>
+  <div>
+    <h1>Home Page</h1>
+  </div>
 </template>
 
 <script>
@@ -20,3 +9,7 @@ export default {
   name: 'IndexPage'
 }
 </script>
+
+<style scoped lang="scss">
+  
+</style>
