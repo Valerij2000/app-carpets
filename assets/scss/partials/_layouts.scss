@@ -16,6 +16,15 @@
   }
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 .container {
   max-width: $maxWidthContainer;
   box-sizing: content-box;
