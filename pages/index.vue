@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Home Page</h1>
-  </div>
+  <main>
+    <HomeSectionMain />
+  </main>
 </template>
 
 <script>
@@ -9,7 +9,3 @@ export default {
   name: 'IndexPage'
 }
 </script>
-
-<style scoped lang="scss">
-  
-</style>

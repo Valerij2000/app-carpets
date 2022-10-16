@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'app-carpets',
+    title: 'Ковры дорожки ковролин - магазин ковров и ковровых изделий в Макеевке.',
     htmlAttrs: {
       lang: 'ru'
     },
@@ -27,6 +27,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/vue-awesome-swiper.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -35,7 +36,8 @@ export default {
   components: {
     dirs: [
       '~/components',
-      '~/components/base'
+      '~/components/base',
+      '~/components/interface'
     ]
   },
 
@@ -49,5 +51,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ['vue-awesome-swiper']
   }
 }
