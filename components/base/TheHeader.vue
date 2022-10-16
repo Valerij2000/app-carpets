@@ -7,10 +7,10 @@
     <nav>
       <ul class="header__links">
         <li class="header__item header__active">
-          Главная
+          <NuxtLink to="/">Главная</NuxtLink>
         </li>
         <li class="header__item">
-          Ковры
+          <NuxtLink to="/carpets">Ковры</NuxtLink>
         </li>
         <li class="header__item">
           Дорожки
@@ -89,10 +89,39 @@
   }
 
   &__item {
-    font-weight: 400;
+    position: relative;
+    font-weight: 600;
     font-size: 16px;
     line-height: 100%;
-    color: $greyColor888;
+    color: $blackColor060;
+    transition: all 0.4s ease;
+
+    &::after{
+      content:'';
+      opacity: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $redColor;
+      
+      &::after {
+        content: '';
+        opacity: 1;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        max-width: 40px;
+        height: 2px;
+        background: $redColor;
+        border-radius: 4px;
+        transition: all 0.4s ease;
+      }
+    }
   }
 
   &__logo {
@@ -108,9 +137,7 @@
   }
 
   &__active {
-    position: relative;
-    font-weight: 600;
-    color: $blackColor060;
+    color: $redColor;
 
     &::after {
       content: '';
@@ -125,6 +152,7 @@
       height: 2px;
       background: $redColor;
       border-radius: 4px;
+      opacity: 1;
     }
   }
 }
